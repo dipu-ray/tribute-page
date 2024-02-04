@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+main .container-one {
+    padding: 70px 100px;
+    background: repeating-linear-gradient( 45deg, #E3E3DB, #E3E3DB 1px, #EDEDE8 1px, #EDEDE8 5px);
+    position: relative;
+    height: 100vh;
+}
+
+.container-one .intro-content {
+    display: flex;
+}
+
+.intro-text {
+    width: 55%;
+}
+
+.intro-text h3 {
+    position: relative;
+    width: 250px;
+    font-family: 'Libre Baskerville', serif;
+    color: #938653;
+    font-style: italic;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.intro-text h1 {
+    font-family: 'Norwester', sans-serif;
+    text-transform: uppercase;
+    color: #4A6556;
+    font-size: 13rem;
+    line-height: 0.9;
+    font-weight: 600;
+    letter-spacing: -.9rem;
+}
+
+.intro-text .dash {
+    position: relative;
+    bottom: 70px;
+    
+}
+
+.intro-img {
+    width: 45%;
+    margin-top: 3%;
+    background-color: #938653;
+    color: #fff;
+    height: 59vh;
+    box-shadow: 0 15px 50px -8px rgba(147, 134, 83, 0.9);
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+.intro-img p {
+    position: relative;
+    padding: 10px 30px;
+}
+
+.diamond {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #938653;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 440px;
+    left: -70px;
+    bottom: 0;
+    z-index: 5;
+}
+
+main .container-two {
+    height: 100%;
+    background-color: #4A6556;
+    padding: 100px 100px;
+}
+
+.container-two h1 {
+    text-transform: uppercase;
+    color: #fcf5e6;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-content .about-cart {
+    height: 350px;
+    width: 300px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4f6d5c;
+    transition: all .50s ease;
+}
+
+.about-content .about-cart:hover {
+    background-color: #3b5446;
+}
+
+.about-cart img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.about-cart h2 {
+    font-size: 20px;
+    color: #938653;
+}
+
+.about-cart p {
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+main .container-three {
+    padding: 70px 200px;
+    background-color: #fcf5e6;
+}
+
+.container-three h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A6556;
+    letter-spacing: 0.8px;
+    margin-bottom: 100px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.the-number-content {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.the-numbers h1 {
+    color: #938653;
+    line-height: 0;
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+
+.the-numbers h4 {
+    font-family: 'Libre Baskerville', serif;
+    color: #4A6556;
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+main .container-four {
+    padding: 70px 400px;
+    background-image: url(assets/diary-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+}
+
+.diary-content h3{
+    color: #EDEDE8;
+    line-height: 1.5;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.diary-content a {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    display: inline;
+    border-bottom: 3px solid #EDEDE8;
+    padding-bottom: 5px;
+    line-height: 1.75em;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all .30s ease;
+}
+
+.diary-content a:hover {
+    color: #EDEDE8;
+    letter-spacing: 2px;
+}
+
+
+
+/* RESPONSIVE WEB DESIGN - MEDIA QUERIES */
+@media screen and (max-width: 1300px) {
+    .intro-text h1 {
+        font-size: 10rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-content {
+        gap: 10px;
+    }
+    
+    .about-content .about-cart {
+        height: 330px;
+        margin-top: 10px;
+    }
+
+    main .container-four {
+        padding: 70px 100px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .intro-text h1 {
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    main .container-one {
+        height: 145vh;
+    }
+    
+    .container-one .intro-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .intro-text {
+        width: 100%;
+    }
+    
+    .intro-text h1 {
+        font-size: 5rem;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+    
+    .intro-text .dash {
+        bottom: 20px;
+        
+    }
+    
+    .intro-img {
+        width: 100%;
+        height: 75vh;
+    }
+    
+    .diamond {
+        top: 150px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about-content .about-cart {
+        width: 50vw;
+        height: 75vh;
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .about-cart img {
+        width: 70%;
+        padding-top: 50px;
+    }
+    
+    .about-cart h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main .container-four {
+        padding: 50px 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .intro-img {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .about-content .about-cart {
+        width: 50vw;
+        height: 68vh;
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .about-cart img {
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    main .container-three {
+        padding: 70px 70px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about-content .about-cart {
+        width: 66vw;
+        height: 70vh;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .about-cart img {
+        width: 90%;
+    }
+
+    main .container-four {
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .container-four {
+        padding: 50px 30px;
+        background-size: 0;
+        background-color: #938653;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main .container-one {
+        padding: 30px 30px;
+        height: 125vh;
+    }
+
+    main .container-two {
+        padding: 100px 30px;
+        text-align: center;
+    }
+
+    .container-two h1 {
+        letter-spacing: 0;
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .about-content .about-cart {
+        width: 70%;
+        height: 50%;
+    }
+
+    main .container-three {
+        padding: 70px 20px;
+    }
+}
